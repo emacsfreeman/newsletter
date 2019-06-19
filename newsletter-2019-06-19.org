@@ -1,0 +1,122 @@
+#+TITLE: Document rédigé avec Org-mode dans Emacs
+#+AUTHOR: Laurent Garnier
+
+#+BEGIN_CENTER
+[[./jack-millard-mountain-unsplash.jpg]]
+#+END_CENTER
+Photo by Jack Millard on [[https://unsplash.com/@millarjb][unsplash.com]]
+
+* Supports de lecture
+** Sur ComputerCode.fr  
+   
+   + [[https://computercode.fr/nouveau-format-de-la-newsletter/][https://computercode.fr]]
+
+** Sur GitHub
+
+   + [[https://emacsfreeman.github.io/newsletter/newsletter-2019-06-19.html][https://emacsfreeman.github.io/newsletter]]
+
+** Sur Medium
+
+   + [[https://medium.com/@emacsfreeman/nouveau-format-de-newsletter-921746c616b4?source=friends_link&sk=9cd71727fc05caba93fa7b0e393a96e5][medium.com/@emacsfreeman]]
+
+* Capacités offertes par ce document
+** Générer un email
+
+   Grâce à un script python fait maison comme expliqué brièvement dans
+   ma formation [[http://bit.ly/python-de-0-a-heros][Python de zéro à Héros]].
+
+   Je suis en train de préparer une formation ciblée sur les
+   possibilités d'emailing offertes par Python.
+
+   Inscrivez-vous à la liste d'attente en cliquant [[https://laurentgarnier.podia.com/comment-envoyer-des-mails-avec-python][ici]].
+
+   
+** Générer un billet de blog
+
+   Grâce à GNU Emacs et en particulier au package =ox-twbs= disponible
+   *GRATUITEMENT* sur GitHub à cette adresse
+   [[https://github.com/marsmining/ox-twbs]] il est possible de générer
+   une page web.
+
+   En fait, avec Org-mode, il est nativement possible de générer une
+   [[https://youtu.be/C9rbqCJC5UA][page html]] mais pas avec bootstrap ou pour le dire simplement, pas
+   jolie du tout.
+
+   Là avec ce package la page sera certes [[https://emacsfreeman.github.io/ccp/ccp-20.html][sobre mais jolie]] quand même.
+   
+   Et mine de rien, l'esthétique ça compte.
+
+   Tout le monde aime ce qui est beau et personne n'aime ce qui est
+   moche.
+
+    
+** Générer un document pdf
+
+   Grâce à $\LaTeX$ il est possible de générer un document pdf de
+   qualité typographique irréprochable.
+
+   Grâce à la classe Beamer il est également possible de générer des
+   diapositives de qualité typographique irréprochable.
+
+** Générer un document Markdown
+
+   On peut également générer un [[https://steemit.com/fr/@lgsp/computer-code-python-ccp-20-expressions-regulieres-7][document Markdown]] à partir de ce même
+   code source.
+
+   Ce qui peut servir par exemple pour une publication sur [[https://steemit.com/steem-bluepaper/@lgsp/french-translation-of-steem-bluepaper-traduction-francaise-du-papier-bleu-de-steem][Steemit]].
+   
+** Conclusion
+   
+   Avec un seul document, et un peu de code, on peut exporter le
+   contenu dans une multitude de formats différents.
+
+   C'est un gain de productivité absolument génial !
+* Ma petite pub
+** Formation GRATUITE
+
+   Récupère ta formation 100% *GRATUITE* [[http://bit.ly/cdbssr-free]]
+** Formations payantes
+
+   1. [[http://bit.ly/cdbssr-podia][CDBSSR]] : Comment Découvrir la Blockchain Sans Se Ruiner
+   2. [[http://bit.ly/acbp-podia][ACBP]] : Apprends à Coder 1 Blockchain avec Python
+   3. [[https://laurentgarnier.podia.com/62ec0d5f-5ee9-40c9-9a69-1b8bc0ffd207][CDDFE]] : Comment Devenir Développeur Front End
+   4. Le catalogue complet est disponible [[https://laurentgarnier.podia.com/][ici]]
+** Liens affiliés
+
+   + Wirex avec la carte : https://bit.ly/2QgCLRH
+   + ₿ Coinbase : http://bit.ly/coinbasemacsfreeman
+   + ₿ Binance : http://bit.ly/binance-coinmarket
+   + Pour acheter des noms de domaines sur la blockchain Zilliqa :
+     http://bit.ly/unstoppabledomain
+   + Best JavaScript book: https://amzn.to/2UOdH5C
+   + Best Python book: https://amzn.to/2DGWTYy
+   + C++ (utile pour la blockchain EOS) : https://amzn.to/2Lu2SX9
+* L'actu des cryptos
+** Ressources francophones de qualité
+
+   Voici un excellent [[http://www.comprendre-steem.fr][site]] fait par des belges pour découvrir
+   l'écosystème de la blockchain [[https://coinmarketcap.com/currencies/steem/][Steem]].
+
+** News en anglais   
+
+   + Un gars sur LinkedIn est venu me parler de ça
+     [[https://www.leocoin.org/]] 
+     Honnêtement je ne sais pas ce que ça vaut
+   + Dans une formation j'ai découvert ça : [[https://deadcoins.com]] et
+     je pense que ça vaut le coup d'y aller de temps en temps pour se
+     rappeler que la majorité des projets vont mourir
+   + Pour être au courant des derniers projets ICO il y a un site
+     sympa [[https://icoalert.com]]
+
+  
+* Conclusion et passage à l'action
+
+  Voilà, c'est tout pour aujourd'hui.
+
+  Il n'y a qu'une seule chose que je te demanderai aujourd'hui,
+  dis-moi ce que tu penses de mon travail en laissant un commentaire
+  sur mon blog [[https://computercode.fr/]]
+
+  Merci à toi pour ton attention.
+
+  Bonne journée à toi

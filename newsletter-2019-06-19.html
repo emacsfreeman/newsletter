@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Document rédigé avec Org-mode dans Emacs</title>
+<!-- 2019-06-19 Wed 10:21 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="Org-mode">
+<meta name="author" content="Laurent Garnier">
+
+<link  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style type="text/css">
+/* org mode styles on top of twbs */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-size: 18px;
+    margin-bottom: 105px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 101px;
+    background-color: #f5f5f5;
+}
+
+footer > div {
+    padding: 10px;
+}
+
+footer p {
+    margin: 0 0 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#table-of-contents {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+blockquote p {
+    font-size: 18px;
+}
+
+pre {
+    font-size: 16px;
+}
+
+.footpara {
+    display: inline-block;
+}
+
+figcaption {
+  font-size: 16px;
+  color: #666;
+  font-style: italic;
+  padding-bottom: 15px;
+}
+
+/* from twbs docs */
+
+.bs-docs-sidebar.affix {
+    position: static;
+}
+@media (min-width: 768px) {
+    .bs-docs-sidebar {
+        padding-left: 20px;
+    }
+}
+
+/* All levels of nav */
+.bs-docs-sidebar .nav > li > a {
+    display: block;
+    padding: 4px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #999;
+}
+.bs-docs-sidebar .nav > li > a:hover,
+.bs-docs-sidebar .nav > li > a:focus {
+    padding-left: 19px;
+    color: #A1283B;
+    text-decoration: none;
+    background-color: transparent;
+    border-left: 1px solid #A1283B;
+}
+.bs-docs-sidebar .nav > .active > a,
+.bs-docs-sidebar .nav > .active:hover > a,
+.bs-docs-sidebar .nav > .active:focus > a {
+    padding-left: 18px;
+    font-weight: bold;
+    color: #A1283B;
+    background-color: transparent;
+    border-left: 2px solid #A1283B;
+}
+
+/* Nav: second level (shown on .active) */
+.bs-docs-sidebar .nav .nav {
+    display: none; /* Hide by default, but at >768px, show it */
+    padding-bottom: 10px;
+}
+.bs-docs-sidebar .nav .nav > li > a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.bs-docs-sidebar .nav .nav > li > a:hover,
+.bs-docs-sidebar .nav .nav > li > a:focus {
+    padding-left: 29px;
+}
+.bs-docs-sidebar .nav .nav > .active > a,
+.bs-docs-sidebar .nav .nav > .active:hover > a,
+.bs-docs-sidebar .nav .nav > .active:focus > a {
+    padding-left: 28px;
+    font-weight: 500;
+}
+
+/* Nav: third level (shown on .active) */
+.bs-docs-sidebar .nav .nav .nav {
+    padding-bottom: 10px;
+}
+.bs-docs-sidebar .nav .nav .nav > li > a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 40px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.bs-docs-sidebar .nav .nav .nav > li > a:hover,
+.bs-docs-sidebar .nav .nav .nav > li > a:focus {
+    padding-left: 39px;
+}
+.bs-docs-sidebar .nav .nav .nav > .active > a,
+.bs-docs-sidebar .nav .nav .nav > .active:hover > a,
+.bs-docs-sidebar .nav .nav .nav > .active:focus > a {
+    padding-left: 38px;
+    font-weight: 500;
+}
+
+/* Show and affix the side nav when space allows it */
+@media (min-width: 992px) {
+    .bs-docs-sidebar .nav > .active > ul {
+        display: block;
+    }
+    /* Widen the fixed sidebar */
+    .bs-docs-sidebar.affix,
+    .bs-docs-sidebar.affix-bottom {
+        width: 213px;
+    }
+    .bs-docs-sidebar.affix {
+        position: fixed; /* Undo the static from mobile first approach */
+        top: 20px;
+    }
+    .bs-docs-sidebar.affix-bottom {
+        position: absolute; /* Undo the static from mobile first approach */
+    }
+    .bs-docs-sidebar.affix .bs-docs-sidenav,.bs-docs-sidebar.affix-bottom .bs-docs-sidenav {
+        margin-top: 0;
+        margin-bottom: 0
+    }
+}
+@media (min-width: 1200px) {
+    /* Widen the fixed sidebar again */
+    .bs-docs-sidebar.affix-bottom,
+    .bs-docs-sidebar.affix {
+        width: 263px;
+    }
+}
+</style>
+<script type="text/javascript">
+$(function() {
+    'use strict';
+
+    $('.bs-docs-sidebar li').first().addClass('active');
+
+    $(document.body).scrollspy({target: '.bs-docs-sidebar'});
+
+    $('.bs-docs-sidebar').affix();
+});
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  displayAlign: "center",
+  displayIndent: "2em",
+  messageStyle: "none",
+  "HTML-CSS": {
+    scale: 100,
+    styles: {
+      ".MathJax_Display": {
+        "font-size": "100%"
+      }
+    }
+  },
+  "SVG": {
+    scale: 100,
+    styles: {
+      ".MathJax_SVG_Display": {
+        "font-size": "100%",
+        "margin-left": "-2.281em"
+      }
+    }
+  }
+});
+</script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"></script>
+</head>
+<body>
+<div id="content" class="container">
+<div class="row"><div class="col-md-9"><h1 class="title">Document rédigé avec Org-mode dans Emacs</h1>
+<div class="center">
+
+<figure>
+<p><img src="./jack-millard-mountain-unsplash.jpg" class="img-responsive" alt="jack-millard-mountain-unsplash.jpg">
+</p>
+</figure>
+</div>
+<p>
+Photo by Jack Millard on <a href="https://unsplash.com/@millarjb">unsplash.com</a>
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Supports de lecture</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Sur ComputerCode.fr</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li><a href="https://computercode.fr/nouveau-format-de-la-newsletter/">https://computercode.fr</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Sur GitHub</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li><a href="https://emacsfreeman.github.io/newsletter/newsletter-2019-06-19.html">https://emacsfreeman.github.io/newsletter</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Sur Medium</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li><a href="https://medium.com/@emacsfreeman/nouveau-format-de-newsletter-921746c616b4?source=friends_link&amp;sk=9cd71727fc05caba93fa7b0e393a96e5">medium.com/@emacsfreeman</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Capacités offertes par ce document</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Générer un email</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Grâce à un script python fait maison comme expliqué brièvement dans
+ma formation <a href="http://bit.ly/python-de-0-a-heros">Python de zéro à Héros</a>.
+</p>
+
+<p>
+Je suis en train de préparer une formation ciblée sur les
+possibilités d'emailing offertes par Python.
+</p>
+
+<p>
+Inscrivez-vous à la liste d'attente en cliquant <a href="https://laurentgarnier.podia.com/comment-envoyer-des-mails-avec-python">ici</a>.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Générer un billet de blog</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Grâce à GNU Emacs et en particulier au package <code>ox-twbs</code> disponible
+<b>GRATUITEMENT</b> sur GitHub à cette adresse
+<a href="https://github.com/marsmining/ox-twbs">https://github.com/marsmining/ox-twbs</a> il est possible de générer
+une page web.
+</p>
+
+<p>
+En fait, avec Org-mode, il est nativement possible de générer une
+<a href="https://youtu.be/C9rbqCJC5UA">page html</a> mais pas avec bootstrap ou pour le dire simplement, pas
+jolie du tout.
+</p>
+
+<p>
+Là avec ce package la page sera certes <a href="https://emacsfreeman.github.io/ccp/ccp-20.html">sobre mais jolie</a> quand même.
+</p>
+
+<p>
+Et mine de rien, l'esthétique ça compte.
+</p>
+
+<p>
+Tout le monde aime ce qui est beau et personne n'aime ce qui est
+moche.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> Générer un document pdf</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+Grâce à \(\LaTeX\) il est possible de générer un document pdf de
+qualité typographique irréprochable.
+</p>
+
+<p>
+Grâce à la classe Beamer il est également possible de générer des
+diapositives de qualité typographique irréprochable.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2-4" class="outline-3">
+<h3 id="sec-2-4"><span class="section-number-3">2.4</span> Générer un document Markdown</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+On peut également générer un <a href="https://steemit.com/fr/@lgsp/computer-code-python-ccp-20-expressions-regulieres-7">document Markdown</a> à partir de ce même
+code source.
+</p>
+
+<p>
+Ce qui peut servir par exemple pour une publication sur <a href="https://steemit.com/steem-bluepaper/@lgsp/french-translation-of-steem-bluepaper-traduction-francaise-du-papier-bleu-de-steem">Steemit</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2-5" class="outline-3">
+<h3 id="sec-2-5"><span class="section-number-3">2.5</span> Conclusion</h3>
+<div class="outline-text-3" id="text-2-5">
+<p>
+Avec un seul document, et un peu de code, on peut exporter le
+contenu dans une multitude de formats différents.
+</p>
+
+<p>
+C'est un gain de productivité absolument génial !
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Ma petite pub</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Formation GRATUITE</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+Récupère ta formation 100% <b>GRATUITE</b> <a href="http://bit.ly/cdbssr-free">http://bit.ly/cdbssr-free</a>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Formations payantes</h3>
+<div class="outline-text-3" id="text-3-2">
+<ol class="org-ol">
+<li><a href="http://bit.ly/cdbssr-podia">CDBSSR</a> : Comment Découvrir la Blockchain Sans Se Ruiner
+</li>
+<li><a href="http://bit.ly/acbp-podia">ACBP</a> : Apprends à Coder 1 Blockchain avec Python
+</li>
+<li><a href="https://laurentgarnier.podia.com/62ec0d5f-5ee9-40c9-9a69-1b8bc0ffd207">CDDFE</a> : Comment Devenir Développeur Front End
+</li>
+<li>Le catalogue complet est disponible <a href="https://laurentgarnier.podia.com/">ici</a>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> Liens affiliés</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li>Wirex avec la carte : <a href="https://bit.ly/2QgCLRH">https://bit.ly/2QgCLRH</a>
+</li>
+<li>₿ Coinbase : <a href="http://bit.ly/coinbasemacsfreeman">http://bit.ly/coinbasemacsfreeman</a>
+</li>
+<li>₿ Binance : <a href="http://bit.ly/binance-coinmarket">http://bit.ly/binance-coinmarket</a>
+</li>
+<li>Pour acheter des noms de domaines sur la blockchain Zilliqa :
+<a href="http://bit.ly/unstoppabledomain">http://bit.ly/unstoppabledomain</a>
+</li>
+<li>Best JavaScript book: <a href="https://amzn.to/2UOdH5C">https://amzn.to/2UOdH5C</a>
+</li>
+<li>Best Python book: <a href="https://amzn.to/2DGWTYy">https://amzn.to/2DGWTYy</a>
+</li>
+<li>C++ (utile pour la blockchain EOS) : <a href="https://amzn.to/2Lu2SX9">https://amzn.to/2Lu2SX9</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> L'actu des cryptos</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> Ressources francophones de qualité</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+Voici un excellent <a href="http://www.comprendre-steem.fr">site</a> fait par des belges pour découvrir
+l'écosystème de la blockchain <a href="https://coinmarketcap.com/currencies/steem/">Steem</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> News en anglais</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>Un gars sur LinkedIn est venu me parler de ça
+<a href="https://www.leocoin.org/">https://www.leocoin.org/</a> 
+Honnêtement je ne sais pas ce que ça vaut
+</li>
+<li>Dans une formation j'ai découvert ça : <a href="https://deadcoins.com">https://deadcoins.com</a> et
+je pense que ça vaut le coup d'y aller de temps en temps pour se
+rappeler que la majorité des projets vont mourir
+</li>
+<li>Pour être au courant des derniers projets ICO il y a un site
+sympa <a href="https://icoalert.com">https://icoalert.com</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Conclusion et passage à l'action</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Voilà, c'est tout pour aujourd'hui.
+</p>
+
+<p>
+Il n'y a qu'une seule chose que je te demanderai aujourd'hui,
+dis-moi ce que tu penses de mon travail en laissant un commentaire
+sur mon blog <a href="https://computercode.fr/">https://computercode.fr/</a>
+</p>
+
+<p>
+Merci à toi pour ton attention.
+</p>
+
+<p>
+Bonne journée à toi
+</p>
+</div>
+</div>
+</div><div class="col-md-3"><nav id="table-of-contents">
+<div id="text-table-of-contents" class="bs-docs-sidebar">
+<ul class="nav">
+<li><a href="#sec-1">1. Supports de lecture</a>
+<ul class="nav">
+<li><a href="#sec-1-1">1.1. Sur ComputerCode.fr</a></li>
+<li><a href="#sec-1-2">1.2. Sur GitHub</a></li>
+<li><a href="#sec-1-3">1.3. Sur Medium</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2. Capacités offertes par ce document</a>
+<ul class="nav">
+<li><a href="#sec-2-1">2.1. Générer un email</a></li>
+<li><a href="#sec-2-2">2.2. Générer un billet de blog</a></li>
+<li><a href="#sec-2-3">2.3. Générer un document pdf</a></li>
+<li><a href="#sec-2-4">2.4. Générer un document Markdown</a></li>
+<li><a href="#sec-2-5">2.5. Conclusion</a></li>
+</ul>
+</li>
+<li><a href="#sec-3">3. Ma petite pub</a>
+<ul class="nav">
+<li><a href="#sec-3-1">3.1. Formation GRATUITE</a></li>
+<li><a href="#sec-3-2">3.2. Formations payantes</a></li>
+<li><a href="#sec-3-3">3.3. Liens affiliés</a></li>
+</ul>
+</li>
+<li><a href="#sec-4">4. L'actu des cryptos</a>
+<ul class="nav">
+<li><a href="#sec-4-1">4.1. Ressources francophones de qualité</a></li>
+<li><a href="#sec-4-2">4.2. News en anglais</a></li>
+</ul>
+</li>
+<li><a href="#sec-5">5. Conclusion et passage à l'action</a></li>
+</ul>
+</div>
+</nav>
+</div></div></div>
+<footer id="postamble" class="">
+<div><p class="author">Author: Laurent Garnier</p>
+<p class="date">Created: 2019-06-19 Wed 10:21</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 26.2 (<a href="http://orgmode.org">Org-mode</a> 9.2.3)</p>
+</div>
+</footer>
+</body>
+</html>
