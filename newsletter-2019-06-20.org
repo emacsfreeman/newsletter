@@ -1,0 +1,144 @@
+#+TITLE: Comment obtenir un revenu passif avec la blockchain ?  
+#+AUTHOR: Laurent Garnier
+
+
+* Aujourd’hui je vais vous présenter une petite pépite. 
+
+  Il s’agit de [[https://coinmarketcap.com/currencies/internet-node-token/][INT]].  
+  C’est un projet IOT (Internet Of Things)  encore méconnu mais qui
+  est sans aucun doute le plus prometteur car il répond à tous les
+  enjeux d'interopérabilité :
+  INT est une plateforme au même titre que Ethereum où des Dapps peuvent
+  être créées, mais pensée principalement pour l'IOT, le marché de la DATA
+  (échange d'information) et l'évolution 5G.
+
+
+  Il y a de très bons projets IOT dans la sphère blockchain ou tangle,
+  et clairement de la place pour tout le monde, d'autant que IOTA par
+  exemple n'aura pas les mêmes débouchés commerciaux que INT. Pas la
+  même tech, pas la même cible. Pas d'inquiétude pour les pros
+  IOTA.  Mais avant de se focaliser directement sur INT parlons un peu
+  de l’internet des objets.  Internet a rapproché les gens et détruit
+  les barrières en accélérant la communication mondiale. L’Internet des
+  objets ou IOT va accélérer notre dépendance aux objets avec, 75
+  milliards d'objets connectés en 2025. Et il faut bien que ces objets
+  parlent le même langage pour communiquer.
+
+  Depuis quelques années nos informations personnelles se sont
+  retrouvées dans les mains de gens peu scrupuleux qui ont pu s'en
+  servir à des fins commerciales ou pire. Imaginez maintenant la
+  quantité d'informations, parfois sensibles, qui circuleront entre les
+  machines. On a besoin d’un cadre permettant d’éviter que toutes ces
+  informations se retrouvent dans les mauvaises mains.  Les
+  consommateurs se tournent vers les appareils connectés à Internet et,
+  s'ils présentent d'énormes possibilités de confort, ils ne sont pas
+  sans risque. Les appareils connectés à Internet regorgent
+  d'informations sensibles.
+
+
+* Et c’est là qu’intervient INT.
+
+  INT ou INTCHAIN a son propre mainnet depuis janvier et développe
+  actuellement les bases d'un réseau décentralisé. INTCHAIN travaille
+  avec des sociétés gouvernementales comme Hubei et développe des
+  applications concrètes avec China Telecom et ZTE dans le domaine de la
+  5G.
+
+  Un exemple d'application est le routeur blockchain qu'ils ont
+  développé avec China Telecom, en vente online mais qui va bientôt se
+  vendre à plus grande échelle dans des boutiques physiques.
+
+  Le routeur rend tous les périphériques domestiques interopérables à
+  l'aide de la blockchain INT.
+
+  Les données y seront automatiquement stockées en sécurité et sans
+  possibilité d’altération ou de vol par un hack (photos..etc).
+
+
+* Oui d’accord mais une blockchain c’est lent. Comment gérer autant de flux ?
+   Hé bien c’est là qu’interviennent les « Subchains » …
+   Avec le réseau INT vous pouvez créer autant de Subchains ou sous
+  chaines que vous le souhaitez. Une chaîne par utilisation. Imaginons
+  que Lenovo (en négociation actuellement) veuille développer sa
+  propre application sur le réseau INT, et bien il disposera de sa
+  propre chaîne.
+
+  Chaque chaîne dispose d’une vitesse de 2000 transactions par
+  secondes et avec une possibilité de création infinie de chaîne vous
+  obtenez un réseau rapide et sécurisé.  C’est d’ailleurs le même
+  principe que pour Komodo qui a réussi a obtenir 20 000 transactions
+  par secondes .  
+  "https://komodoplatform.com/komodo-platforms-new-scalability-tech/"
+  
+  Et ils visent le million !!!!   
+
+* Ok. Mais ça ne résout pas le  problème des données sensibles 
+
+  Hé bien INT va bientôt implémenter les deux meilleures technologies
+  d’anonymisation : [[https://cryptopotato.com/what-is-mimblewimble-the-complete-beginners-guide/][Mimblewilble]] et [[https://www.binance.vision/fr/blockchain/zk-snarks-and-zk-starks-explained][Zk-SNARKs]] (ou plutôt, une
+  progéniture de ce dernier)
+
+  Mimblewimble possède deux avantages distinctifs :
+
+  1. L'anonymat
+  2. La scalabilité (la capacité d'un système à continuer de
+    fonctionner de manière normale lorsque le nombre d'utilisateurs
+    augmente et vu le nombre d'utilisateurs dans l'Iot vous
+    comprendrez tout son intérêt)
+
+
+  Le prix de Litecoin a par ailleurs explosé aprés l'annonce de
+  l'implémentation de mimblewimble. 
+
+
+  Et  Zk-SNARKs dans tout ça ?  
+
+  L’inconvénient de Mimblewimble c’est qu’il ne peut être utilisé que
+  pour les transactions simples. 
+
+  Zk-SNARKs lui, est plus robuste, et aussi plus gourmand.  Behavior
+  Private Key, progéniture de Zk-SNARKs, sera utilisé dans les
+  domaines où Mimblewimble n’est pas la solution. Entre autre, les
+  smart contracts ...
+
+
+* PRIX ET POTENTIEL
+
+  En terme de prix et de potentiel il y a peu de projets aussi aboutis
+  avec une si faible capitalisation, due au fait que l'équipe s'est
+  concentrée d'abord sur la partie technique.
+
+  INT est actuellement à 6 millions de marketcap, vous pouvez espérer
+  un minimum d'un milliard de capitalisation pour un token comme celui
+  ci (le marketcap d'iota actuellement).   Un petit x160
+  quoi.  D’ailleurs il a récemment pris 30% en un jour.
+
+
+*  Oui ok mais ça c’est pas du revenu passif. C’est juste de l’investissement.
+
+  Hé bien sur la blockchain d’INT on gagne de l’argent rien qu’en
+  votant (7-8%).  Il suffit de voter pour les nœuds validateurs de la
+  blockchain et pouff ! De nouveaux INT apparaissent sur votre adresse
+  (paiement une fois par semaine).  Et c’est pas tout !
+
+
+  Si tu crée ton propre nœud tu gagne encore plus ! 
+
+  Et là ça dépend de la quantité de votes obtenus.
+
+
+* En Bref 
+
+  En 2025, il y aura 75 milliards d'objets connectés. Ce que INT crée
+  est un langage / une plate-forme universelle permettant à chaque
+  objet de communiquer entre eux. INT a créé un réseau sécurisé par
+  son architecture et se prépare à créer un écosystème autour d'un
+  routeur et de la 5G, ce qui en ferait la première plate-forme crypto
+  5G (collaboration avec ZTE). Ses faiblesses ? Être complètement
+  inconnu pour le moment car l’équipe s’est consacré au développement
+  du produit et de la tech.
+
+
+  PS: la communauté française est très active. Tu peux la retrouver
+   "https://t.me/intchain_france" ici.
+
