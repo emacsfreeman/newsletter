@@ -1,6 +1,13 @@
 #+TITLE: Comment obtenir un revenu passif avec la blockchain ?  
 #+AUTHOR: Laurent Garnier
 
+* Supports de lecture 
+** Sur WhealthyHuman.fr
+   + [[https://whealthyhuman.fr/comment-obtenir-un-revenu-passif-avec-la-blockchain-%25E2%2580%25A8%25E2%2580%25A8/][https://whealthyhuman.fr/]]
+** Sur GitHub
+   + [[https://emacsfreeman.github.io/newsletter/newsletter-2019-06-20.html][https://emacsfreeman.github.io/newsletter/]]
+** Sur Medium
+   + [[https://medium.com/@emacsfreeman/comment-obtenir-un-revenu-passif-avec-la-blockchain-c691df47f0c9?postPublishedType=initial][https://medium.com/@emacsfreeman/]]
 
 * Aujourd’hui je vais vous présenter une petite pépite. 
 
@@ -142,3 +149,10 @@
   PS: la communauté française est très active. Tu peux la retrouver
    "https://t.me/intchain_france" ici.
 
+* Newsletter précédente
+** Sur ComputerCode.fr
+   + [[https://computercode.fr/nouveau-format-de-la-newsletter/][https://computercode.fr/]]
+** Sur GitHub
+   + [[https://emacsfreeman.github.io/newsletter/newsletter-2019-06-19.html][https://emacsfreeman.github.io/newsletter/]]
+** Sur Medium
+   + [[https://medium.com/@emacsfreeman/nouveau-format-de-newsletter-921746c616b4?sk=9cd71727fc05caba93fa7b0e393a96e5][https://medium.com/@emacsfreeman/]]
