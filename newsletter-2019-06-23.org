@@ -128,7 +128,7 @@
   En fait, juste le gars qui refuse le métro-boulot-dodo... parce
   qu'il a compris que c'est une prison
 
-  Parce que criait haut et fort, montrer à tout le monde qu'on se tue
+  Parce que crier haut et fort, montrer à tout le monde qu'on se tue
   au travail n'est ni le meilleur moyen pour s'enrichir ni pour être
   heureux dans sa vie.
 
@@ -138,7 +138,7 @@
 * The Meaning Of Life
 
   #+BEGIN_CENTER
-  [[./ganapathy-kumar.jpg]]
+  [[./unsplash/ganapathy-kumar.jpg]]
   Photo by Ganapathy Kumar on Unsplash
   #+END_CENTER
 
@@ -177,7 +177,7 @@
 * Qu'est-ce que le travail ?  
   
   #+BEGIN_CENTER
-  [[./qi-li.jpg]]
+  [[./unsplash/qi-li.jpg]]
   Photo by Qi Li on Unsplash
   #+END_CENTER
   
@@ -250,7 +250,7 @@
   Par contre, j'ai besoin de te connaître d'abord, de savoir comment
   tu apprends, à quel rythme...
 
-  En suivant mes formations je peux savoir à quel fréquence tu
+  En suivant mes formations je peux savoir à quelle fréquence tu
   consultes les contenus, si tu poses des questions, si tu aides les
   autres membres de la communauté (*aider les autres est
   FONDAMENTAL*), si tu as une démarche honnête et sincère...
@@ -373,7 +373,8 @@
 * Que la force soit avec toi
 
   #+BEGIN_CENTER
-  Photo by  on Unsplash
+  [[./unsplash/sarah-ferrante-goodrich.jpg]]
+  Photo by Sarah Ferrante Goodrich on Unsplash
   #+END_CENTER
 
   De la force, du courage et de l'abnégation il va t'en falloir.
@@ -421,7 +422,7 @@
   Alors je te souhaite d'avoir la force de passer à l'action.
 
   D'ailleurs pour les personnes qui passeront vraiment à l'action en
-  créer un compte sur le portefeuille [[https://bit.ly/2QgCLRH][Wirex]] disponible *GRATUITEMENT*
+  créant un compte sur le portefeuille [[https://bit.ly/2QgCLRH][Wirex]] disponible *GRATUITEMENT*
   ici ([[https://bit.ly/2QgCLRH]]) après avoir acheté la formation je
   proposerai une remise de 10€ en DAI (un stable coin dont j'ai parlé
   hier).
@@ -445,7 +446,7 @@
 * Pourquoi vouloir devenir riche ?
   
   #+BEGIN_CENTER
-  [[./jack-millard-fall-unsplash.jpg]]
+  [[./unsplash/jack-millard-fall-unsplash.jpg]]
   Photo by Jack Millard on Unsplash
   #+END_CENTER
 
